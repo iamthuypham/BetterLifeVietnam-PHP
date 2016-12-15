@@ -127,9 +127,15 @@ include_once("lib/header.php");
 		</div>
 	</div>
 	<br class="clr" />
+	<div id="upcomingEvent">
+		<div style="text-align: center">
+			<h1>UPCOMING EVENT</h1>
+			<a href="docs/BLV-Christmas-Flyer.pdf"><img src="images/BLV-Christmas-Flyer-1.jpg"></a>
+		</div>
+	</div>
 	<div id="donation">
 		<div style="text-align: center">
-		<h2>SUPPORT US</h2>
+		<h1>SUPPORT US</h1>
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
 				<input type="hidden" name="hosted_button_id" value="K9P45W3RSSL44">

@@ -527,7 +527,7 @@ a:active img, a:visited img, a:link img{border-style: none; text-decoration: non
 	text-align: justify;
 	padding: 20px 20px 0;
 }
-#col1 > div > h2, #col2 > div > h2, #col3 > div > h2, #donation > div > h2{
+#col1 > div > h2, #col2 > div > h2, #col3 > div > h2{
 	font-family: 'TitilliumWebLight', Arial Narrow, Arial;
 	color: #02b168;
 	font-size: 17px;
@@ -541,6 +541,17 @@ a:active img, a:visited img, a:link img{border-style: none; text-decoration: non
 	letter-spacing: 1px;
 	display:block;
 	width:100%;
+}
+#upcomingEvent > div {
+  margin-top: 20px;
+}
+#upcomingEvent > div > h1,  #donation > div > h1 {
+  font-family: 'TitilliumWebLight', Arial Narrow, Arial;
+	color: #02b168;
+	padding: 15px 0;
+}
+#upcomingEvent > div > a > img {
+  width: 70%;
 }
 #l1 {
 	text-align: left;
