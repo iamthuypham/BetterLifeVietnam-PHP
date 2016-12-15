@@ -1,0 +1,55 @@
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+	position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+	position: relative;
+	overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+Vertical scroller example, with custom base class */
+
+/* Container DIV */
+.vert { 
+	width: 250px; /* wider than clip for custom button pos. */
+	height: 160px;
+	margin-top: 8px;
+}
+
+/* Clip DIV */
+.vert .simply-scroll-clip {
+	width: 250px;
+	height: 160px;
+}
+
+/* Explicitly set height/width of each list item */
+.vert .simply-scroll-list li {
+	padding-bottom: 20px;
+	color: #666;
+	text-align: justify;
+	font-size: 14px;
+}
