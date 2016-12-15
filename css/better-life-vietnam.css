@@ -99,7 +99,7 @@ html,body {
 
 #menu a, #menu li#nolink{
     float: left;
-    padding: 10px 70px;
+    padding: 10px 40px;
     color: #0299b1;
     text-transform: uppercase;
     font-family: 'TitilliumWebLight', Arial Narrow, Arial;
@@ -115,7 +115,7 @@ html,body {
     text-transform: uppercase;
     font-family: 'TitilliumWebRegular', Arial Narrow, Arial;
     font-size: 16px;
-    // font-weight: bold;
+    /*// font-weight: bold;*/
     text-decoration: none;
     letter-spacing:1px;
     border-radius: 5px 5px 0 0;
@@ -165,14 +165,14 @@ html,body {
     box-shadow: -1px 0 0 rgba(255,255,255,.3);
 }
 
-a#sublinks1{
+a#sublinks2{
     color: #f2f2f2;
     text-align:left;
     margin-left: 15px;
     margin-right: 15px;
     width: 100%;
 }
-a#sublinks2{
+a#sublinks3{
     color: #f2f2f2;
     text-align:left;
     margin-left: 65px;
@@ -541,6 +541,17 @@ a:active img, a:visited img, a:link img{border-style: none; text-decoration: non
 	letter-spacing: 1px;
 	display:block;
 	width:100%;
+}
+#upcomingEvent > div {
+  margin-top: 20px;
+}
+#upcomingEvent > div > h1,  #donation > div > h1 {
+  font-family: 'TitilliumWebLight', Arial Narrow, Arial;
+	color: #02b168;
+	padding: 15px 0;
+}
+#upcomingEvent > div > a > img {
+  width: 70%;
 }
 #l1 {
 	text-align: left;
