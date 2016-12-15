@@ -127,6 +127,19 @@ include_once("lib/header.php");
 		</div>
 	</div>
 	<br class="clr" />
+	<div id="donation">
+		<div style="text-align: center">
+		<h2>SUPPORT US</h2>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="K9P45W3RSSL44">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+		</div>
+	</div>
+</div>
+	
 <?
 include_once("lib/footer.php");
 ?>
