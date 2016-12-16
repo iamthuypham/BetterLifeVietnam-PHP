@@ -700,11 +700,9 @@ a:link img {
   flex-direction: row;
   justify-content: center;
 }
-.upcomingEvent>div>a>img {
-  width: 100%;
-}
+
 #col1>div,
-#col2>div,
+/*#col2>div,*/
 #col3>div {
   color: #666666;
   font-family: Arial Narrow, Arial;
@@ -724,7 +722,6 @@ a:link img {
 }
 
 #col1>div a,
-#col2>div a,
 #col3>div a,
 #l1 {
   text-align: right;
@@ -775,4 +772,32 @@ hr {
   position: absolute;
   outline: none;
   margin: none;
+}
+.xmas-event {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.xmas-event>div {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.more-info{
+  font-size: 16px;
+  color: white;
+  padding: 10px 20px;
+  background-color: red;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.more-info:hover{
+  font-size: 17px;
+  color: white;
+  background-color: #00d659;
+  border-radius: 5px;
+  opacity: 1;
 }

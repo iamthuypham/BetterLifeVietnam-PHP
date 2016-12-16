@@ -118,10 +118,15 @@ include_once("lib/header.php");
 		</div>
 		<div id="col2" class="upcomingEvent">
 			<div>
-				<h2>
-					UPCOMING EVENT
-				</h2>
-				<a href="docs/BLV-Christmas-Flyer.pdf"><img src="images/BLV-Christmas-Flyer-1.jpg"></a>
+				<h2>UPCOMING EVENT</h2>
+				<h2 style="text-align:center; color:#ff0054">LOOKING FOR A MORE <strong>MEANINGFUL CHRISTMAS</strong></h2>
+				<h1 style="color:#02b168">Tours For Books on Dec 25</h1>
+				<br>
+				<p>Get in the holiday spirit while giving back!Join a small group of individuals from Hanoi to attend a Christmas Party with the children of Ba Trai, Khanh Thuong, Xuan Khanh, and Vi Thuy villages of the Ba Vi district. Give books and scholarship to the underprivileged children and help make their future brighter.</p>
+				<div class="xmas-event">
+					<div><a class="more-info" style="" href="docs/BLV-Christmas-Flyer.pdf">More Information</a></div>
+					<img src="images/BLV-Christmas-Flyer-1-pic.jpg" width="600px">
+				</div>
 			</div>
 		</div>
 	</div>
