@@ -110,10 +110,19 @@ include_once("lib/header.php");
 			</div>
 		</div>
 	</div>
-	<div id="upcomingEvent">
-		<div style="text-align: center">
-			<h1>UPCOMING EVENT</h1>
-			<a href="docs/BLV-Christmas-Flyer.pdf"><img src="images/BLV-Christmas-Flyer-1.jpg"></a>
+	<div class="info">
+		<div id="col1">
+			<div>
+				<a style="padding-top: 20px" href="tours-for-books.php"><img border="0" width="300px" src="/images/tour-books-logo-transparent.png" /></a>
+			</div>
+		</div>
+		<div id="col2" class="upcomingEvent">
+			<div>
+				<h2>
+					UPCOMING EVENT
+				</h2>
+				<a href="docs/BLV-Christmas-Flyer.pdf"><img src="images/BLV-Christmas-Flyer-1.jpg"></a>
+			</div>
 		</div>
 	</div>
 	<br class="clr" />

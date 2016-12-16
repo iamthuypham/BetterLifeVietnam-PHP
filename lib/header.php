@@ -28,11 +28,12 @@ $PageParent=$ExpPath[sizeof($ExpPath)-2];
 $Page=str_replace("&","&amp;",$Page);
 $PageParent=str_replace("&","&amp;",$PageParent);
 $Pages=array("about", "what-we-do", "responsible-tourism", "contact");
+$Sublinks[0]=array("our-team");
 $Sublinks[1]=array("free-book-library", "scholarships-for-underprivileged", "job-assistance-to-youth");
 $Sublinks[2]=array("tours-for-books", "voluntourism");
 $PageLinkStr="<header id='header'>
 	<ul id='menu'>";
-for($SlinkC=1;$SlinkC<=2;$SlinkC++){
+for($SlinkC=0;$SlinkC<=2;$SlinkC++){
   $SublinksStr[$SlinkC]="";
   if($Sublinks[$SlinkC]!=""){
     $SublinksStr[$SlinkC]="<ul>";
@@ -43,9 +44,10 @@ for($SlinkC=1;$SlinkC<=2;$SlinkC++){
   }
 }
 $StrippedPage = rtrim($Page, ".php");
+$IfSublink[0] = "FALSE";
 $IfSublink[1] = "FALSE";
 $IfSublink[2] = "FALSE";
-for($SlinkC=1;$SlinkC<=2;$SlinkC++){
+for($SlinkC=0;$SlinkC<=2;$SlinkC++){
   for($j=0;$j<sizeof($Sublinks[$SlinkC]);$j++){
     if(strcasecmp($StrippedPage,$Sublinks[$SlinkC][$j])==0){
       $IfSublink[$SlinkC] = "TRUE";
@@ -54,7 +56,7 @@ for($SlinkC=1;$SlinkC<=2;$SlinkC++){
 }
 for($i=0;$i<sizeof($Pages);$i++){
   if($Sublinks[$i]!="" && $IfSublink[$i] == "TRUE"){
-    if($i==1){
+    if($i==0 || $i==1){
         $PageLinkStr.="<li><a href='".$Pages[$i]."'>".strtoupper(str_replace("-"," ",$Pages[$i]))."</a>".$SublinksStr[$i];
     }
     else{
@@ -70,7 +72,7 @@ for($i=0;$i<sizeof($Pages);$i++){
     }
   }
   else{
-    if($Sublinks[$i]!="" && $i==1){
+    if($Sublinks[$i]!="" && ($i==1 || $i==0)){
         $PageLinkStr.="<li><a href='".$Pages[$i]."'>".strtoupper(str_replace("-"," ",$Pages[$i]))."</a>".$SublinksStr[$i];
     }
     elseif($Sublinks[$i]!=""){
@@ -99,10 +101,7 @@ if($HomePage=="YES"){
 </head>
 <body <?php echo($bodyjs.$bodyBG) ?>>
 <div class="ParentContainer">
-<div class="Logo">
-  <div class="logo-pic"><a href="tours-for-books.php"><img src="images/tour-books-logo-transparent.png" alt="Tours For Book" /></a></div>
-  <div class="mission"><p><strong><span>Better Life Vietnam</span> was founded with the belief that access to education, food, healthcare, clean water and a decent quality of life are basic human rights</strong></p></div>
-  </div>
+<div class="Logo"><a href="/"><img src="images/Better-Life-Vietnam.png" alt="Better Life Vietnam" /></a></div>
 <?php
 echo($LoginStr);
 echo($PageLinkStr);
