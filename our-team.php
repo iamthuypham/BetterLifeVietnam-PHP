@@ -7,20 +7,21 @@ include_once("lib/header.php");
 ?>
 <div class="BodyBox">
 <h2 class="Pagehead">Our Team</h2>
-<div class="LPanel">
 	<table>
 		<tr>
-			<td><img src="images/About/our-team-profile/Alyssa.jpg"></td>
+			<td class="profile-pic">
+				<div>
+					<img src="images/About/our-team-profile/Alyssa.jpg">
+					<h3>Alyssa</h3>
+					<h4>Marketing Specialist</h4>
+				</div>
+			</td>
 			<td>
-				<h3>Alyssa</h3>
-				<p></p>
+				<div><p>“Better Life Vietnam & Tours For Books exists at the crossroads of my interests of education, children and tourism. I couldn’t be more thrilled to get involved with the organization and help bring a brighter and better future for the children and youth of Vietnam.”</p></div>
 			</td>
 		</tr>
 	</table>
-</div>
-<div class="RPanel">
-	<a href="" data-lightbox="About" data-title="BLV Team"><img id="RoundedImg" src="" border="0" width="390px"><p class="caption DownSpace">Thinh Picture Here</p></a>
-</div>
+
 <?
 include_once("lib/footer.php");
 ?>
