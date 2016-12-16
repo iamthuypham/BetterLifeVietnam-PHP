@@ -93,6 +93,7 @@ if($HomePage=="YES"){
 <title><?php echo($Lpagehead.$TitleSeparator) ?>Better Life Vietnam</title>
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" type="text/css" href="css/better-life-vietnam.css" />
+<link rel="stylesheet" type="text/css" href="css/our-team.css" />
 <script type='text/javascript' src='js/jquery.min.js'></script>
 <script type='text/javascript' src='js/showMore.js'></script>
 <script type='text/javascript' src='js/slideshow.js'></script>
