@@ -27,13 +27,12 @@ $Page=$ExpPath[sizeof($ExpPath)-1];
 $PageParent=$ExpPath[sizeof($ExpPath)-2];
 $Page=str_replace("&","&amp;",$Page);
 $PageParent=str_replace("&","&amp;",$PageParent);
-$Pages=array("about", "our-team", "what-we-do", "responsible-tourism", "contact");
-$Sublinks[1]="";
-$Sublinks[2]=array("free-book-library", "scholarships-for-underprivileged", "job-assistance-to-youth");
-$Sublinks[3]=array("tours-for-books", "voluntourism");
+$Pages=array("about", "what-we-do", "responsible-tourism", "contact");
+$Sublinks[1]=array("free-book-library", "scholarships-for-underprivileged", "job-assistance-to-youth");
+$Sublinks[2]=array("tours-for-books", "voluntourism");
 $PageLinkStr="<header id='header'>
 	<ul id='menu'>";
-for($SlinkC=1;$SlinkC<=3;$SlinkC++){
+for($SlinkC=1;$SlinkC<=2;$SlinkC++){
   $SublinksStr[$SlinkC]="";
   if($Sublinks[$SlinkC]!=""){
     $SublinksStr[$SlinkC]="<ul>";
@@ -44,9 +43,9 @@ for($SlinkC=1;$SlinkC<=3;$SlinkC++){
   }
 }
 $StrippedPage = rtrim($Page, ".php");
+$IfSublink[1] = "FALSE";
 $IfSublink[2] = "FALSE";
-$IfSublink[3] = "FALSE";
-for($SlinkC=1;$SlinkC<=3;$SlinkC++){
+for($SlinkC=1;$SlinkC<=2;$SlinkC++){
   for($j=0;$j<sizeof($Sublinks[$SlinkC]);$j++){
     if(strcasecmp($StrippedPage,$Sublinks[$SlinkC][$j])==0){
       $IfSublink[$SlinkC] = "TRUE";

@@ -101,32 +101,6 @@ include_once("lib/header.php");
 			</div>
 		</div>
 	</div>
-	<div id="col1">
-		<div>
-			<a style="padding-top: 20px" href="tours-for-books"><img border="0" width="250px" src="/images/Tours-for-Books-Small.png" /></a>
-		</div>
-	</div>
-	<div id="col2">
-		<div>
-			<h2>
-				HOW WE BRING ABOUT A CHANGE			
-			</h2>
-			Better Life Vietnam caters to the need of child education, supported by its various programs including free book distribution, scholarships, free uniform distribution, etc. <a href="what-we-do">more &raquo;</a>
-		</div>
-	</div>
-	<div id="col3">
-		<div>
-			<h2>
-				NEWS &amp; ANNOUNCEMENTS
-			</h2>
-				<ul id="scroller">
-					<?php for($x=2;$x<=$NCount;$x++){
-						echo("<li>".$News[$x]."</li>");
-					} ?>
-				</ul>
-		</div>
-	</div>
-	<br class="clr" />
 	<div id="upcomingEvent">
 		<div style="text-align: center">
 			<h1>UPCOMING EVENT</h1>
@@ -144,6 +118,7 @@ include_once("lib/header.php");
 			</form>
 		</div>
 	</div>
+	<br class="clr" />
 </div>
 	
 <?
