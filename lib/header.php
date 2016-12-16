@@ -99,7 +99,10 @@ if($HomePage=="YES"){
 </head>
 <body <?php echo($bodyjs.$bodyBG) ?>>
 <div class="ParentContainer">
-<div class="Logo"><a href="/"><img src="images/Better-Life-Vietnam.png" alt="Better Life Vietnam" /></a></div>
+<div class="Logo">
+  <div class="logo-pic"><a href="tours-for-books.php"><img src="images/tour-books-logo-transparent.png" alt="Tours For Book" /></a></div>
+  <div class="mission"><p><strong><span>Better Life Vietnam</span> was founded with the belief that access to education, food, healthcare, clean water and a decent quality of life are basic human rights</strong></p></div>
+  </div>
 <?php
 echo($LoginStr);
 echo($PageLinkStr);
