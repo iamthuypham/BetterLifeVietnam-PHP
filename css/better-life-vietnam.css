@@ -83,10 +83,14 @@ body {
   line-height: 150%;
   background-color: transparent;
 }
-
-.Logo {
-  float:left;
-  margin-top:50px;
+.header-pic{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.facebook img{
+  width: 150px;
 }
 #header {
   clear: both;

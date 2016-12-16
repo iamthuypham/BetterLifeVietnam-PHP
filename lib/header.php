@@ -102,7 +102,10 @@ if($HomePage=="YES"){
 </head>
 <body <?php echo($bodyjs.$bodyBG) ?>>
 <div class="ParentContainer">
+<div class="header-pic">
 <div class="Logo"><a href="/"><img src="images/Better-Life-Vietnam.png" alt="Better Life Vietnam" /></a></div>
+<div class="facebook"><a href="https://www.facebook.com/events/407722832893074/"><img src="images/facebook.png" alt="Facebook" /></a></div>
+</div>
 <?php
 echo($LoginStr);
 echo($PageLinkStr);
