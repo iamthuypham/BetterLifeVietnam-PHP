@@ -72,6 +72,16 @@ body {
 }
 .profile-pic > div > img {
   width: 150px;
-  border-radius: 50%;
+  border-radius: 10%;
   border: 2px solid black;
+}
+
+@media (max-width: 640px) and (min-width: 320px) {
+  
+}
+
+@media (max-width: 1024px) and (min-width: 320px) {
+  .profile-pic > div > img {
+    border-radius: 10%;
+  }
 }

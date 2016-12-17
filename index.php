@@ -111,19 +111,21 @@ include_once("lib/header.php");
 		</div>
 	</div>
 	<div class="info">
-		<div id="col1">
+		<div id="col1" style="background-color: white">
 			<div>
 				<a style="padding-top: 20px" href="tours-for-books.php"><img border="0" width="300px" src="/images/tour-books-logo-transparent.png" /></a>
+				<p style="text-align: center; padding: 0 10px">YOUR VIETNAM TOUR <br> & TRAVEL SERVICE PARTNER</p>
+ 				<p style="text-align: center; padding: 0 10px; background-color:#0299b1; color: white">Proudly Supporting the Projects of Better Life Vietnam</p>
 			</div>
 		</div>
-		<div id="col2" class="upcomingEvent">
+		<div id="col2" class="upcomingEvent" style="background-color: white">
 			<div>
 				<h2>UPCOMING EVENT</h2>
 				<h2 style="text-align:center; color:#ff0054">LOOKING FOR A MORE <strong>MEANINGFUL CHRISTMAS</strong></h2>
-				<h1 style="color:#02b168">Tours For Books on Dec 25</h1>
+				<h1 style="color:#02b168; padding: 0 10px">Tours For Books on Dec 25</h1>
 				<br>
-				<p>Get in the holiday spirit while giving back!Join a small group of individuals from Hanoi to attend a Christmas Party with the children of Ba Trai, Khanh Thuong, Xuan Khanh, and Vi Thuy villages of the Ba Vi district. Give books and scholarship to the underprivileged children and help make their future brighter.</p>
-				<div class="xmas-event">
+				<p style="padding: 0 10px">Get in the holiday spirit while giving back!Join a small group of individuals from Hanoi to attend a Christmas Party with the children of Ba Trai, Khanh Thuong, Xuan Khanh, and Vi Thuy villages of the Ba Vi district. Give books and scholarship to the underprivileged children and help make their future brighter.</p>
+				<div class="xmas-event" style="padding-bottom: 10px">
 					<div><a class="more-info" style="" href="docs/BLV-Christmas-Flyer.pdf">More Information</a></div>
 					<img src="images/BLV-Christmas-Flyer-1-pic.jpg" width="600px">
 				</div>
