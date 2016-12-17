@@ -5,7 +5,7 @@ $ExtraHeader="<link rel='stylesheet' href='css/lightbox.css' type='text/css' med
 $ExtraFooter="<script type='text/javascript' src='js/lightbox.js'></script>";
 include_once("lib/header.php");
 ?>
-<div class="BodyBox">
+<div class="ParentContainer">
 <h2 class="Pagehead">Our Team</h2>
 	<table>
 		<tr>
