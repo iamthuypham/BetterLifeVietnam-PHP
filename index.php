@@ -66,6 +66,15 @@ if(file_exists($NewsFile) && filesize($NewsFile)!=0){
 }
 include_once("lib/header.php");
 ?>
+<div class="Donation">
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="K9P45W3RSSL44">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+</div>
+<br class="clr" />
 <div class="BodyBox">
 	<div id="wrapper">
 		<div id="images-wrapper">
@@ -101,49 +110,29 @@ include_once("lib/header.php");
 			</div>
 		</div>
 	</div>
-	<div id="col1">
-		<div>
-			<a style="padding-top: 20px" href="tours-for-books"><img border="0" width="250px" src="/images/Tours-for-Books-Small.png" /></a>
+	<div class="info">
+		<div id="col1" style="background-color: white">
+			<div>
+				<a style="padding-top: 20px" href="tours-for-books.php"><img border="0" width="300px" src="/images/tour-books-logo-transparent.png" /></a>
+				<p style="text-align: center; padding: 0 10px">YOUR VIETNAM TOUR <br> & TRAVEL SERVICE PARTNER</p>
+ 				<p style="text-align: center; padding: 0 10px; background-color:#0299b1; color: white">Proudly Supporting the Projects of Better Life Vietnam</p>
+			</div>
 		</div>
-	</div>
-	<div id="col2">
-		<div>
-			<h2>
-				HOW WE BRING ABOUT A CHANGE			
-			</h2>
-			Better Life Vietnam caters to the need of child education, supported by its various programs including free book distribution, scholarships, free uniform distribution, etc. <a href="what-we-do">more &raquo;</a>
-		</div>
-	</div>
-	<div id="col3">
-		<div>
-			<h2>
-				NEWS &amp; ANNOUNCEMENTS
-			</h2>
-				<ul id="scroller">
-					<?php for($x=2;$x<=$NCount;$x++){
-						echo("<li>".$News[$x]."</li>");
-					} ?>
-				</ul>
+		<div id="col2" class="upcomingEvent" style="background-color: white">
+			<div>
+				<h2>UPCOMING EVENT</h2>
+				<h2 style="text-align:center; color:#ff0054">LOOKING FOR A MORE <strong>MEANINGFUL CHRISTMAS</strong></h2>
+				<h1 style="color:#02b168; padding: 0 10px">Tours For Books on Dec 25</h1>
+				<br>
+				<p style="padding: 0 10px">Get in the holiday spirit while giving back!Join a small group of individuals from Hanoi to attend a Christmas Party with the children of Ba Trai, Khanh Thuong, Xuan Khanh, and Vi Thuy villages of the Ba Vi district. Give books and scholarship to the underprivileged children and help make their future brighter.</p>
+				<div class="xmas-event" style="padding-bottom: 10px">
+					<div><a class="more-info" style="" href="docs/BLV-Christmas-Flyer.pdf">More Information</a></div>
+					<img src="images/BLV-Christmas-Flyer-1-pic.jpg" width="600px">
+				</div>
+			</div>
 		</div>
 	</div>
 	<br class="clr" />
-	<div id="upcomingEvent">
-		<div style="text-align: center">
-			<h1>UPCOMING EVENT</h1>
-			<a href="docs/BLV-Christmas-Flyer.pdf"><img src="images/BLV-Christmas-Flyer-1.jpg"></a>
-		</div>
-	</div>
-	<div id="donation">
-		<div style="text-align: center">
-		<h1>SUPPORT US</h1>
-			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="hosted_button_id" value="K9P45W3RSSL44">
-				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			</form>
-		</div>
-	</div>
 </div>
 	
 <?

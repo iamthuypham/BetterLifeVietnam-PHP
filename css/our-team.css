@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'TitilliumWebLight';
+  src: url('fonts/TitilliumWeb-Light.eot');
+  src: url('fonts/TitilliumWeb-Light?#iefix') format('embedded-opentype'), url('fonts/TitilliumWeb-Light.woff') format('woff'), url('fonts/TitilliumWeb-Light.ttf') format('truetype'), url('fonts/TitilliumWeb-Light.svg#TitilliumWebLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TitilliumWebLightItalic';
+  src: url('fonts/TitilliumWeb-LightItalic.eot');
+  src: url('fonts/TitilliumWeb-LightItalic?#iefix') format('embedded-opentype'), url('fonts/TitilliumWeb-LightItalic.woff') format('woff'), url('fonts/TitilliumWeb-LightItalic.ttf') format('truetype'), url('fonts/TitilliumWeb-LightItalic.svg#TitilliumWebLightItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TitilliumWebRegular';
+  src: url('fonts/TitilliumWeb-Regular.eot');
+  src: url('fonts/TitilliumWeb-Regular?#iefix') format('embedded-opentype'), url('fonts/TitilliumWeb-Regular.woff') format('woff'), url('fonts/TitilliumWeb-Regular.ttf') format('truetype'), url('fonts/TitilliumWeb-Regular.svg#TitilliumWebRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* CSS reset */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/*Our Team page*/
+.profile-pic {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile-pic h3, .profile-pic h4 {
+  text-align: center;
+}
+.profile-pic > div > img {
+  width: 150px;
+  border: 1px solid black;
+}

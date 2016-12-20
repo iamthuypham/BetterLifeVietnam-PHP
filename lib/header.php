@@ -27,13 +27,13 @@ $Page=$ExpPath[sizeof($ExpPath)-1];
 $PageParent=$ExpPath[sizeof($ExpPath)-2];
 $Page=str_replace("&","&amp;",$Page);
 $PageParent=str_replace("&","&amp;",$PageParent);
-$Pages=array("about", "our-team", "what-we-do", "responsible-tourism", "contact");
-$Sublinks[1]="";
-$Sublinks[2]=array("free-book-library", "scholarships-for-underprivileged", "job-assistance-to-youth");
-$Sublinks[3]=array("tours-for-books", "voluntourism");
+$Pages=array("about", "what-we-do", "responsible-tourism", "contact");
+$Sublinks[0]=array("our-team");
+$Sublinks[1]=array("free-book-library", "scholarships-for-underprivileged", "job-assistance-to-youth");
+$Sublinks[2]=array("tours-for-books", "voluntourism");
 $PageLinkStr="<header id='header'>
 	<ul id='menu'>";
-for($SlinkC=1;$SlinkC<=3;$SlinkC++){
+for($SlinkC=0;$SlinkC<=2;$SlinkC++){
   $SublinksStr[$SlinkC]="";
   if($Sublinks[$SlinkC]!=""){
     $SublinksStr[$SlinkC]="<ul>";
@@ -44,9 +44,10 @@ for($SlinkC=1;$SlinkC<=3;$SlinkC++){
   }
 }
 $StrippedPage = rtrim($Page, ".php");
+$IfSublink[0] = "FALSE";
+$IfSublink[1] = "FALSE";
 $IfSublink[2] = "FALSE";
-$IfSublink[3] = "FALSE";
-for($SlinkC=1;$SlinkC<=3;$SlinkC++){
+for($SlinkC=0;$SlinkC<=2;$SlinkC++){
   for($j=0;$j<sizeof($Sublinks[$SlinkC]);$j++){
     if(strcasecmp($StrippedPage,$Sublinks[$SlinkC][$j])==0){
       $IfSublink[$SlinkC] = "TRUE";
@@ -55,7 +56,7 @@ for($SlinkC=1;$SlinkC<=3;$SlinkC++){
 }
 for($i=0;$i<sizeof($Pages);$i++){
   if($Sublinks[$i]!="" && $IfSublink[$i] == "TRUE"){
-    if($i==1){
+    if($i==0 || $i==1){
         $PageLinkStr.="<li><a href='".$Pages[$i]."'>".strtoupper(str_replace("-"," ",$Pages[$i]))."</a>".$SublinksStr[$i];
     }
     else{
@@ -71,7 +72,7 @@ for($i=0;$i<sizeof($Pages);$i++){
     }
   }
   else{
-    if($Sublinks[$i]!="" && $i==1){
+    if($Sublinks[$i]!="" && ($i==1 || $i==0)){
         $PageLinkStr.="<li><a href='".$Pages[$i]."'>".strtoupper(str_replace("-"," ",$Pages[$i]))."</a>".$SublinksStr[$i];
     }
     elseif($Sublinks[$i]!=""){
@@ -92,6 +93,7 @@ if($HomePage=="YES"){
 <title><?php echo($Lpagehead.$TitleSeparator) ?>Better Life Vietnam</title>
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" type="text/css" href="css/better-life-vietnam.css" />
+<link rel="stylesheet" type="text/css" href="css/our-team.css" />
 <script type='text/javascript' src='js/jquery.min.js'></script>
 <script type='text/javascript' src='js/showMore.js'></script>
 <script type='text/javascript' src='js/slideshow.js'></script>
@@ -100,7 +102,10 @@ if($HomePage=="YES"){
 </head>
 <body <?php echo($bodyjs.$bodyBG) ?>>
 <div class="ParentContainer">
+<div class="header-pic">
 <div class="Logo"><a href="/"><img src="images/Better-Life-Vietnam.png" alt="Better Life Vietnam" /></a></div>
+<div class="facebook"><a href="https://www.facebook.com/events/407722832893074/"><img src="images/facebook.png" alt="Facebook" /></a></div>
+</div>
 <?php
 echo($LoginStr);
 echo($PageLinkStr);
