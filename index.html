@@ -49,7 +49,6 @@ $ExtraHeader="<script src='js/jquery.carouFredSel-6.0.4-packed.js' type='text/ja
 				});
 			})(jQuery);
 		</script>";
-
 $NewsFile="lib/announcements.txt";
 if(file_exists($NewsFile) && filesize($NewsFile)!=0){
 	$NewsCont=file($NewsFile);
